@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Creating custom properties (variables) */
 :root {
   --primary-color: #fcf5e9;
   --dark-color: #333;
@@ -30,7 +31,8 @@ img {
   max-width: 100%;
 }
 
-/* Utility Classes */
+/* UTILITY CLASSES */
+/* Called Utility classes because you can use them anywhere on the web page rather than just one section */
 .bg-primary {
   background: var(--primary-color);
   color: #333;
@@ -129,6 +131,7 @@ img {
 /* Hero */
 .hero {
   height: 500px;
+  /* using flexbox to align center both horizontally and vertically */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,6 +144,7 @@ img {
   font-weight: normal;
 }
 
+/* Gallery of Images */
 .gallery-flex {
   display: flex;
   justify-content: center;
@@ -149,6 +153,7 @@ img {
 }
 
 .gallery-item {
+  /* set the width on the images to have 3 images per row, need to -20px to account for gap */
   width: calc(33.333% - 20px);
   border-radius: 10px;
 }
@@ -272,6 +277,7 @@ img {
     font-size: 1.8rem;
   }
 
+  /* changing to 2 images per row on smaller screen */
   .gallery-item {
     width: calc(50% - 20px);
   }
