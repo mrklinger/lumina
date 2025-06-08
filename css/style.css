@@ -62,6 +62,8 @@ img {
   color: #fff;
 }
 
+/* class to visually hide the input label, remove it from browser but it is still there for screen-readers */
+/* this is a popular class setting - check MDN documents */
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
